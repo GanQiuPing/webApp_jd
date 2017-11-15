@@ -1,0 +1,258 @@
+//引入 base.less文件
+@import "base.less";
+
+//京东主体布局容器
+#layout {
+  //  最大宽度
+  max-width: 640px;
+  //  最小宽度
+  min-width: 320px;
+  margin: 0 auto;
+  background-color: #cccccc;
+  //height: 2000px;
+}
+
+
+/*
+头部区域
+  注意:  logo 登录 屏幕变化时 是固定的宽度 ,不会影响,
+        是搜索框宽度在变化, 用 padding 撑开
+*/
+#header {
+  height: 40px;
+  background-color: pink;
+  width: 100%;
+  //在pc查看时 会占满 100%,所以设置 最大宽度为640
+  max-width: 640px;
+  position: fixed;
+  z-index: 5;
+  //logo
+  .icon-logo {
+    //在base.less中 作为公共样式 ,这样用的时候就不用写重复代码
+    //background-image: url("../images/sprites.png");
+    //background-size: 200px 200px;
+    background-position: 0 -109px;
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    width: 60px;
+    height: 36px;
+  }
+  //搜索框
+  > form {
+    width: 100%;
+    //使用padding撑开 让屏幕变化时  搜索框随着变化
+    padding: 0 50px 0 75px;
+    //搜索图标
+    .icon-search {
+      background-position: -60px  -110px;
+      width: 20px;
+      height: 20px;
+      display: block;
+      position: absolute;
+      left:80px;
+      top:10px;
+    }
+    .search {
+      width: 100%;
+      height: 30px;
+      margin-top: 5px;
+      border-radius: 15px;
+      padding-left: 30px;
+    }
+  }
+  // login
+  > .login {
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+    color: #ffffff;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+// 轮播图
+#section {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  //轮播图
+  ul:first-of-type{
+    width: 1000%;
+    transform: translateX(-10%);
+    >li{
+      width: 10%;
+      float: left;
+      >a {
+        >img{
+          width: 100%;
+        }
+      }
+    }
+  }
+  //小圆点
+  ul:last-of-type{
+    //width: 128px;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    bottom: 8px;
+    >li {
+      float: left;
+      width: 6px;
+      height: 6px;
+      border-radius: 4px;
+      border: 1px solid #ffffff;
+      margin-left:10px;
+      &.active {
+        background-color: #ffffff;
+      }
+    }
+    >li:first-child {
+      margin-left:0;
+    }
+  }
+}
+
+//导航区域
+#nav {
+  background-color: #ffffff;
+  ul{
+    >li {
+      float: left;
+      width:25%;
+      >a {
+        text-align: center;
+        display: block;
+        margin:6px 0;
+        font-size: 12px;
+        >img {
+          width:40px;
+          //height:40px;
+          margin:0 auto;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+//掌上秒杀
+#main {
+  padding: 5px;
+  .seckill {
+    background-color: #ffffff;
+    margin-top: 20px;
+    border-radius:  8px;
+    .seckill-header{
+      position: relative;
+      height:40px;
+      line-height:40px;
+      >div {
+        float: left;
+      }
+      .clock {
+        >img {
+          width: 20px;
+          height: 25px;
+          position: absolute;
+          left:10px;
+          top:8px;
+        }
+      }
+      .hand-seckill {
+        margin-left:40px;
+        color:@main-color;
+      }
+      .time {
+        margin-left:10px;
+        >span {
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          line-height:15px;
+          background-color: #000000;
+          color: #ffffff;
+          text-align: center;
+          &:nth-child(3n){
+            background-color: #ffffff;
+            color: #000000;
+          }
+        }
+      }
+      .more {
+        margin-right:10px;
+      }
+    }
+
+    .seckill-body {
+      ul{
+        >li {
+          float: left;
+          width:33.3333333%;
+          border-left: 1px solid #cccccc;
+          &:first-of-type {
+            border-left:0;
+          }
+          >a {
+            display: block;
+            text-align: center;
+            >img {
+              width:60%;
+              margin:0 auto;
+            }
+            >del {
+              color: @main-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .jd-market {
+    background-color: #ffffff;
+    margin-top:20px;
+    border-radius: 8px;
+    .market-title {
+        h4 {
+          font-weight: normal ;
+          line-height:40px;
+          padding-left:30px;
+          border-bottom:1px solid #cccccc;
+          position: relative;
+          &::before {
+            content: '';
+            width: 4px ;
+            height:15px;
+            background-color: @main-color;
+            display: block;
+            position: absolute;
+            left: 20px;
+            top:13px;
+          }
+        }
+    }
+
+    .market-body {
+      >a {
+        width: 50%;
+        >img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+//swiper 插件
+.swiper-container {
+  width: 100%;
+}
+.swiper-slide img {
+  width: 100%;
+}

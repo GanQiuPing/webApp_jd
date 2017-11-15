@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>分类页面</title>
+    <!--引入 less 文件-->
+    <link rel="stylesheet/less" href="less/category.less">
+    <!--引入 less js文件-->
+    <script src="lib/less/less.js"></script>
+</head>
+<body>
+    <!--顶部通栏-->
+    <header id="tobar">
+        <!--左边返回按钮-->
+        <a href="#" class="icon-back"></a>
+        <!--搜索框-->
+        <form action="">
+            <input type="search" placeholder="请输入要搜索商品">
+        </form>
+        <a href="#" class="icon-menu"></a>
+    </header>
+
+    <!--主体部分-->
+    <main id="categoty">
+        <!--左边产品分类-->
+        <div class="categoty-left">
+            <ul>
+                <li class="active"><a href="javascript:;">热门推荐</a></li>
+                <li class=""><a href="javascript:;">潮流女装</a></li>
+                <li class=""><a href="javascript:;">品牌男装</a></li>
+                <li class=""><a href="javascript:;">内衣配饰</a></li>
+                <li class=""><a href="javascript:;">家用电器</a></li>
+                <li class=""><a href="javascript:;">电脑办公</a></li>
+                <li class=""><a href="javascript:;">手机数码</a></li>
+                <li class=""><a href="javascript:;">母婴频道</a></li>
+                <li class=""><a href="javascript:;">图书</a></li>
+                <li class=""><a href="javascript:;">家居家纺</a></li>
+                <li class=""><a href="javascript:;">居家生活</a></li>
+                <li class=""><a href="javascript:;">家具建材</a></li>
+                <li class=""><a href="javascript:;">热门推荐</a></li>
+                <li class=""><a href="javascript:;">潮流女装</a></li>
+                <li class=""><a href="javascript:;">品牌男装</a></li>
+                <li class=""><a href="javascript:;">内衣配饰</a></li>
+                <li class=""><a href="javascript:;">家用电器</a></li>
+                <li class=""><a href="javascript:;">电脑办公</a></li>
+                <li class=""><a href="javascript:;">手机数码</a></li>
+                <li class=""><a href="javascript:;">母婴频道</a></li>
+                <li class=""><a href="javascript:;">图书</a></li>
+                <li class=""><a href="javascript:;">家居家纺</a></li>
+                <li class=""><a href="javascript:;">居家生活</a></li>
+                <li class=""><a href="javascript:;">家具建材</a></li>
+            </ul>
+        </div>
+        <!--右边产品-->
+        <div class="categoty-right">
+            <!--轮播图-->
+            <div class="categoty-list">
+                <a href="#" class="banner">
+                    <img src="images/banner_1.jpg" alt="">
+                </a>
+                <!--热门分类-->
+                <div class="hot-product">
+                    <h4>热门分类</h4>
+                    <ul class="clearfix">
+                        <li>
+                            <a href="#">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>秋衣</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>秋衣</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>秋衣</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>秋衣</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>秋衣</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>秋衣</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--热门分类-->
+                <div class="hot-product">
+                    <h4>热门分类</h4>
+                    <ul class="clearfix">
+                        <li>
+                            <a href="#">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>秋衣</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>秋衣</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>秋衣</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>秋衣</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>秋衣</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/nv-fy.jpg" alt="">
+                                <p>秋衣</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!--引入自己的 js-->
+    <script src="lib/js/categoty.js"></script>
+    <!--引入  iscroll滑动插件 -->
+    <script src="lib/iscroll/build/iscroll.js"></script>
+
+    <!-- 1.  引入  iscroll js -->
+    <!-- 2. 初始化 iscroll-->
+    <script>
+        //初始化左侧分类的滑动
+        var myScrollL = new IScroll('.categoty-left',{
+            mouseWheel: true, // 支持鼠标滚动
+            //是否显示滚动条 是绝对定位在右边  可以给父元素添加相对定位 在父元素内
+            scrollbars: true 
+        });
+        // 初始化 右侧分类 滑动
+        var myScrollR = new IScroll('.categoty-right',{
+            mouseWheel: true, // 支持鼠标滚动
+            //是否显示滚动条 是绝对定位在右边  可以给父元素添加相对定位 在父元素内
+            scrollbars: true 
+        });
+    </script>
+
+</body>
+</html>

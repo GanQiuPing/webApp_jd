@@ -1,0 +1,73 @@
+/*1. 公共样式里面通常放哪些样式：
+
+    1. 样式的重置例如清除默认的元素间距 列表项 边框 等等
+    2 一些会经常重复使用到的样式 例如浮动 定位 清除浮动 等等
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  //  设置移动端盒模型
+  box-sizing: border-box;
+  //  当按住a 标签的时 有背景高度, 设置为 transparent
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  display: block;
+  vertical-align: middle;
+  border: none 0;
+}
+input {
+  border: 0 none;
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #666666;
+}
+
+//清除浮动
+.clearfix::after,
+.clearfix::before{
+  content: '';
+  display: block;
+  clear: both;
+}
+.clearfix::after{
+  clear: both;
+}
+
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+//设置背景图片 公共样式 icon开头 包含 空格 icon
+[class^="icon-"],
+[class*=" icon-"] {
+  background: url("../images/sprites.png") no-repeat;
+  background-size: 200px 200px;
+}
+
+.bt {
+  border-top:1px solid #cccccc;
+}
+.bb{
+  border-bottom:1px solid #cccccc;
+}
+.bl {
+  border-left:1px solid #cccccc;
+}
+.br {
+  border-right:1px solid #cccccc;
+}
+
+//定义主体颜色
+@main-color: #d8505c;

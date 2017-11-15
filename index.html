@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>京东</title>
+    <!--引入less css 文件   rel="stylesheet/less"-->
+    <link rel="stylesheet/less" href="less/index.less">
+    <!--引入 js less 文件-->
+    <script src="lib/less/less.js"></script>
+    <!--引入 swiper css文件-->
+    <link rel="stylesheet" href="lib/swiper/css/swiper.css">
+</head>
+<body>
+<!--京东的主体布局容器-->
+<div id="layout">
+    <!--头部区域-->
+    <header id="header">
+        <!--logo-->
+        <i class="icon-logo"></i>
+        <!--搜索框-->
+        <form action="">
+            <i class="icon-search"></i>
+            <input type="search" class="search" placeholder="请输入您要搜索的商品">
+        </form>
+        <a href="#" class="login">登录</a>
+    </header>
+
+    <!--轮播图-->
+    <section id="section">
+        <!--轮播图-->
+        <ul class="clearfix">
+            <li><a href="#"><img src="images/l8.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/l1.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/l2.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/l3.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/l4.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/l5.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/l6.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/l7.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/l8.jpg" alt=""></a></li>
+            <li><a href="#"><img src="images/l1.jpg" alt=""></a></li>
+        </ul>
+        <!--小圆点-->
+        <ul>
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+
+    <!--使用 swiper 轮播插件 -->
+    <div class="swiper-container">
+        <!--轮播图片-->
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/l1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/l2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/l3.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/l4.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/l5.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/l6.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/l7.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="images/l8.jpg" alt="">
+            </div>
+        </div>
+        <!--小圆点-->
+        <div class="swiper-pagination"></div>
+        <!--左右箭头-->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!--滚动条-->
+        <!--<div class="swiper-scrollbar"></div>-->
+    </div>
+
+
+    <!--导航区域-->
+    <nav id="nav">
+        <ul class="clearfix">
+            <li><a href="#"><img src="images/nav0.png" alt="">导航菜单</a></li>
+            <li><a href="#"><img src="images/nav1.png" alt="">导航菜单</a></li>
+            <li><a href="#"><img src="images/nav2.png" alt="">导航菜单</a></li>
+            <li><a href="#"><img src="images/nav3.png" alt="">导航菜单</a></li>
+            <li><a href="#"><img src="images/nav4.png" alt="">导航菜单</a></li>
+            <li><a href="#"><img src="images/nav5.png" alt="">导航菜单</a></li>
+            <li><a href="#"><img src="images/nav6.png" alt="">导航菜单</a></li>
+            <li><a href="#"><img src="images/nav7.png" alt="">导航菜单</a></li>
+        </ul>
+    </nav>
+
+    <!--主体部分-->
+    <main id="main">
+        <!--掌上秒杀-->
+        <div class="seckill">
+            <div class="seckill-header">
+                <div class="clock">
+                    <img src="images/seckill-icon.png" alt="">
+                </div>
+                <div class="hand-seckill">掌上秒杀</div>
+                <div class="time">
+                    <span>0</span>
+                    <span>0</span>
+                    <span>:</span>
+                    <span>0</span>
+                    <span>0</span>
+                    <span>:</span>
+                    <span>0</span>
+                    <span>0</span>
+                </div>
+
+                <a href="#" class="more pull-right">更多</a>
+            </div>
+
+            <div class="seckill-body">
+                <ul class="clearfix">
+                    <li>
+                        <a href="">
+                            <img src="images/detail01.jpg" alt="">
+                            <p>
+                                <p>￥10.00</p>
+                                <del>￥1000.00</del>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/detail01.jpg" alt="">
+                            <p>
+                                <p>￥10.00</p>
+                                <del>￥1000.00</del>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/detail01.jpg" alt="">
+                            <p>
+                                <p>￥10.00</p>
+                                <del>￥1000.00</del>
+                            </p>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!--京东超市-->
+        <div class="jd-market">
+            <div class="market-title">
+                <h4>京东超市</h4>
+            </div>
+            <div class="market-body clearfix">
+                <a href="#" class="pull-left br"><img src="images/cp1.jpg" alt=""></a>
+                <a href="#" class="pull-right">
+                    <img src="images/cp2.jpg"  class="bb" alt="">
+                    <img src="images/cp3.jpg" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="jd-market">
+            <div class="market-title">
+                <h4>京东超市</h4>
+            </div>
+            <div class="market-body clearfix">
+                <a href="#" class="pull-right br"><img src="images/cp4.jpg" alt=""></a>
+                <a href="#" class="pull-left">
+                    <img src="images/cp5.jpg"  class="bb" alt="">
+                    <img src="images/cp6.jpg" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="jd-market">
+            <!--超市标题-->
+            <div class="market-title">
+                <h4>京东超市</h4>
+            </div>
+            <!--超市主体-->
+            <div class="market-body clearfix">
+                <a href="#" class="pull-left br">
+                    <img src="images/cp1.jpg" alt="">
+                </a>
+                <a href="#" class="pull-right">
+                    <img src="images/cp2.jpg" class="bb" alt="">
+                    <img src="images/cp3.jpg" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="jd-market">
+            <div class="market-title">
+                <h4>京东超市</h4>
+            </div>
+            <div class="market-body clearfix">
+                <a href="#" class="pull-right br"><img src="images/cp4.jpg" alt=""></a>
+                <a href="#" class="pull-left">
+                    <img src="images/cp5.jpg"  class="bb" alt="">
+                    <img src="images/cp6.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </main>
+
+</div>
+<!--引入 自己的 js-->
+<script src="lib/js/index.js"></script>
+<!--引入 swiper js-->
+<script src="lib/swiper/js/swiper.js"></script>
+
+ <!--swiper轮播插件  js代码-->
+<script>
+
+
+  var mySwiper = new Swiper ('.swiper-container', {
+      /*direction 轮播图滚动方向
+       horizontal  水平  vartical 垂直
+       autoplay 每隔1秒自动播放
+       */
+      direction: 'horizontal',
+      loop: true,
+      autoplay: 1000,
+
+      // 如果需要分页器
+      pagination: '.swiper-pagination',
+
+      // 如果需要前进后退按钮
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      //滑动后  自动播放
+      autoplayDisableOnInteraction : false,
+
+      // 如果需要滚动条
+//      scrollbar: '.swiper-scrollbar',
+
+      // 添加 3D特效
+      effect : 'cube',
+      cube: {
+          slideShadows: false,
+          shadow: false,  //阴影
+          shadowOffset: 100,
+          shadowScale: 0.6
+      }
+  })
+</script>
+
+</body>
+</html>
